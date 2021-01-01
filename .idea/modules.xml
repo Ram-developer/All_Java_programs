@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/All_Java_Code/All_Java_Code.iml" filepath="$PROJECT_DIR$/All_Java_Code/All_Java_Code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ByteShortIntLong/ByteShortIntLong.iml" filepath="$PROJECT_DIR$/ByteShortIntLong/ByteShortIntLong.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Float and Double/Float and Double.iml" filepath="$PROJECT_DIR$/Float and Double/Float and Double.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/IdeaProjects.iml" filepath="$PROJECT_DIR$/.idea/IdeaProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaMasterClass/JavaMasterClass.iml" filepath="$PROJECT_DIR$/JavaMasterClass/JavaMasterClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PrimitiveTypeChallenge/PrimitiveTypeChallenge.iml" filepath="$PROJECT_DIR$/PrimitiveTypeChallenge/PrimitiveTypeChallenge.iml" />
+    </modules>
+  </component>
+</project>
