@@ -92,74 +92,75 @@ class OnlineTest extends JFrame implements ActionListener {
     void set() {
         radioButton[4].setSelected(true);
         if (current == 0) {
-            label.setText("Que1:  SAFAR mess crash?");
-            radioButton[0].setText("Jonny Singh");
-            radioButton[1].setText("Natasa Malcova");
-            radioButton[2].setText("Mia Khalifa");
-            radioButton[3].setText("All gay man");
+            label.setText("Que1:  Which of the following option leads to the portability and security of Java?");
+            radioButton[0].setText("The applet makes the Java code secure and portable");
+            radioButton[1].setText("Bytecode is executed by JVM");
+            radioButton[2].setText("Use of exception handling");
+            radioButton[3].setText("Dynamic binding between objects");
         }
         if (current == 1) {
-            label.setText("Que2:  What is the total SAFAR mess candidate?");
-            radioButton[0].setText("TWO");
-            radioButton[1].setText("FIVE");
-            radioButton[2].setText("THREE");
-            radioButton[3].setText("FOUR");
+            label.setText("Que2:  Which of the following is not a Java features?");
+            radioButton[0].setText("Dynamic");
+            radioButton[1].setText("Use of pointers");
+            radioButton[2].setText("Architecture neutral");
+            radioButton[3].setText("Object oriented");
         }
         if (current == 2) {
-            label.setText("Que3: SAFAR mess target?");
-            radioButton[0].setText("AMAZON");
-            radioButton[1].setText("MICROSOFT");
-            radioButton[2].setText("GOOGLE");
-            radioButton[3].setText("TCS");
+            label.setText("Que3: The \\u0021 article referred to as a");
+            radioButton[0].setText("Unicode escape sequence");
+            radioButton[1].setText("Octal escape");
+            radioButton[2].setText("Hexadecimal");
+            radioButton[3].setText("Line feed");
         }
         if (current == 3) {
-            label.setText("Que4: Penis length of Azahar?");
-            radioButton[0].setText("4 inch");
-            radioButton[1].setText("5 inch");
-            radioButton[2].setText("6 inch");
-            radioButton[3].setText("7 inch");
+            label.setText("Que4: _____ is used to find and fix bugs in the Java programs.");
+            radioButton[0].setText("JVM");
+            radioButton[1].setText("JRE");
+            radioButton[2].setText("JDK");
+            radioButton[3].setText("JDB");
         }
         if (current == 4) {
-            label.setText("Que5:  Penis length of Nooralam?");
-            radioButton[0].setText("2 inch");
-            radioButton[1].setText("3 inch");
-            radioButton[2].setText("4 inch");
-            radioButton[3].setText("5 inch");
+            label.setText("Que5:  Which of the following is a valid declaration of a char?");
+            radioButton[0].setText("char ch = '\\utea';");
+            radioButton[1].setText("char ca = 'tea';");
+            radioButton[2].setText("char cr = \\u0223;");
+            radioButton[3].setText("char cc = '\\itea';");
         }
         if (current == 5) {
-            label.setText("Que6: Total girl friend of Mojaffar Ansari?");
-            radioButton[0].setText("Zero");
-            radioButton[1].setText("One");
-            radioButton[2].setText("Two");
-            radioButton[3].setText("Infinite");
+            label.setText("Que6: What is the return type of the hashCode() method in the Object class?");
+            radioButton[0].setText("Int");
+            radioButton[1].setText("Object");
+            radioButton[2].setText("Long");
+            radioButton[3].setText("Void");
         }
         if (current == 6) {
-            label.setText("Que7:  Total x-gf of Nooralam Rahaman?");
-            radioButton[0].setText("10(Before passed 10th class.)");
-            radioButton[1].setText("20(Before passed 12th class.)");
-            radioButton[2].setText("30(Before passed Diploma.)");
-            radioButton[3].setText("40(Continue including present gf Priya)");
+            label.setText("Que7:  Which of the following is a valid long literal?");
+            radioButton[0].setText("BH002837");
+            radioButton[1].setText("L3637300");
+            radioButton[2].setText("00465743");
+            radioButton[3].setText("0xnf029L");
         }
         if (current == 7) {
-            label.setText("Que8:  House location of Ramprasad Mandal?");
-            radioButton[0].setText("Murshidabad");
-            radioButton[1].setText("Bankura");
-            radioButton[2].setText("Purba Medinipur");
-            radioButton[3].setText("Paschim Medinipur");
+            label.setText("Que8:  What does the expression float a = 35 / 0 return?");
+            radioButton[0].setText("0");
+            radioButton[1].setText("Not a number");
+            radioButton[2].setText("Infinity");
+            radioButton[3].setText("Run time exception");
         }
         if (current == 8) {
-            label.setText("Que9: House location of Panulal Azahar");
-            radioButton[0].setText("Murshidabad");
-            radioButton[1].setText("Delhi");
-            radioButton[2].setText("Dargeeling");
-            radioButton[3].setText("Goa");
+            label.setText("Que9: Evaluate the following Java expression, if x=3, y=5, and z=10:");
+            radioButton[0].setText("24");
+            radioButton[1].setText("98");
+            radioButton[2].setText("46");
+            radioButton[3].setText("25");
         }
         if (current == 9) {
-            label.setText("Que10: House location of Naralam?");
-            radioButton[0].setText("Paschim Medinipur");
-            radioButton[1].setText("Purba Medinipur");
-            radioButton[2].setText("Bankura");
-            radioButton[3].setText("Birbhum");
+            label.setText("Que10: Which of the following tool is used to generate API documentation " +
+                    "in HTML format from doc comments in source code??");
+            radioButton[0].setText("Javadoc tool");
+            radioButton[1].setText("javaw command");
+            radioButton[2].setText("javap tool");
+            radioButton[3].setText("javah command");
         }
         label.setBounds(30, 40, 450, 20);
         for (int i = 0, j = 0; i <= 90; i += 30, j++)
