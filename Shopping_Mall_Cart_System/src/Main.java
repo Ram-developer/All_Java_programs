@@ -2,15 +2,17 @@
 import java.util.Scanner;
 public class Main
 {
-    private static Scanner scanner = new Scanner(System.in);
-    private static Cart_System cart_system = new Cart_System();
+    private static final Scanner scanner = new Scanner(System.in);
+    private static final Cart_System cart_system = new Cart_System();
     public static void main(String[] args)
     {
+        System.out.println("\nRamprasad shopping mall cart application.");
+        System.out.println("__________________________________________");
         boolean exit = false;
         int choose;
         printMenu();
         while (!exit) {
-            System.out.print("Please choose any option to continue: ");
+            System.out.print("Please choose any option to continue(0-6): ");
             boolean hasNextInt = scanner.hasNextInt();
             if (hasNextInt)
             {
@@ -74,10 +76,22 @@ public class Main
         System.out.print("Please enter your shopping item: ");
         String add = scanner.nextLine();
         System.out.print("Enter the price: ");
-        double price = scanner.nextDouble();
-        cart_system.addThing(add.toUpperCase(),price);
-        System.out.println("__________________________________________");
-    }
+        boolean isValid = scanner.hasNextInt();
+
+            if (isValid){
+                double price = scanner.nextDouble();
+                cart_system.addThing(add.toUpperCase(),price);
+                System.out.println("__________________________________________");
+            }
+            else
+            {
+                System.out.println("Please enter a valid price.");
+                System.out.println("__________________________________________");
+            }
+            scanner.nextLine();
+
+        }
+
     public static void replaceThing()
     {
         System.out.print("Choose current item name: ");
