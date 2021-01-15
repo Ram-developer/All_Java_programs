@@ -29,7 +29,8 @@ public class Cart_System
             sum=sum+shoppingPrice.get(j);
         }
         if (sum>0){
-            System.out.println("\tTotal price: "+sum);
+            System.out.println("__________________________________________");
+            System.out.println("\t~Total price: "+sum);
         }
         System.out.println("__________________________________________");
     }

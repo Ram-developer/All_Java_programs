@@ -61,17 +61,17 @@ public class Main
     {
         System.out.println("Please choose one of these................");
         System.out.println("Press (0) To Show application list.");
-        System.out.println("Press (1) To show the all cart thing.");
-        System.out.println("Press (2) TO add a new thing to your cart.");
-        System.out.println("Press (3) To replace thing in the cart.");
-        System.out.println("Press (4) To remove a thing from the cart.");
-        System.out.println("Press (5) To search a thing in the cart.");
+        System.out.println("Press (1) To show the all cart item.");
+        System.out.println("Press (2) TO add a new item to your cart.");
+        System.out.println("Press (3) To replace item in the cart.");
+        System.out.println("Press (4) To remove a item from the cart.");
+        System.out.println("Press (5) To search a item in the cart.");
         System.out.println("Press (6) To Exit exit the application.");
         System.out.println("__________________________________________");
     }
     public static void addNewThing()
     {
-        System.out.print("Please enter your shopping thing: ");
+        System.out.print("Please enter your shopping item: ");
         String add = scanner.nextLine();
         System.out.print("Enter the price: ");
         double price = scanner.nextDouble();
@@ -80,11 +80,11 @@ public class Main
     }
     public static void replaceThing()
     {
-        System.out.print("Choose current thing name: ");
+        System.out.print("Choose current item name: ");
         String currentThing = scanner.nextLine();
-        System.out.print("Enter new thing name: ");
+        System.out.print("Enter new item name: ");
         String newThing = scanner.nextLine();
-        System.out.print("Enter the price of new thing: ");
+        System.out.print("Enter the price of new item: ");
         double price = scanner.nextDouble();
         cart_system.replaceThings(currentThing.toUpperCase(),newThing.toUpperCase(),price);
         System.out.println("__________________________________________");
@@ -100,7 +100,7 @@ public class Main
 
     public static void searchThing()
     {
-        System.out.print("Choose your thing that are you search: ");
+        System.out.print("Choose your item that are you search: ");
         String searchThing = scanner.nextLine();
         if (cart_system.searchThing(searchThing.toUpperCase()))
         {
