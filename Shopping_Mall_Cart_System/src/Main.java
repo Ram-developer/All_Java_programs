@@ -41,10 +41,11 @@ public class Main
                         break;
                     case 6:
                         exit = true;
+                        System.out.println("\t>> Close application.");
                         break;
 
                     default:
-                        System.out.println("Please press the correct option.");
+                        System.out.println(">> Please press the correct option.");
                         System.out.println("__________________________________________");
                         break;
                 }
@@ -76,7 +77,7 @@ public class Main
         System.out.print("Please enter your shopping item: ");
         String add = scanner.nextLine();
         System.out.print("Enter the price: ");
-        boolean isValid = scanner.hasNextInt();
+        boolean isValid = scanner.hasNextDouble();
 
             if (isValid){
                 double price = scanner.nextDouble();

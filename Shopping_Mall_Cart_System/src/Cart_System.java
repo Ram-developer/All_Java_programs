@@ -63,14 +63,10 @@ public class Cart_System
         System.out.println(">> "+"Your cart item "+(index+1)+" has been replace.");
     }
 
-//    public void testThing(String thing){
-//        int position = findThing(thing);
-//        System.out.println("Test index:  " + position);
-//    }
     public void removeThing(String thing)
     {
         int position= findThing(thing);
-        System.out.println("Index :   "+position);
+       // System.out.println("Index :   "+position);
         if (searchThing(thing)){
             if (position>=0){
                 removeThing(position);
