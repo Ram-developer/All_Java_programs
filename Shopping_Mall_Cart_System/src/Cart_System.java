@@ -2,9 +2,10 @@ import java.util.ArrayList;
 
 public class Cart_System
 {
-    private ArrayList<String> shoppingList = new ArrayList<String>();
+    private final ArrayList<String> shoppingList = new ArrayList<>();
+    private final ArrayList<Double> shoppingPrice = new ArrayList<>();
 
-    public void addThing(String thing){
+    public void addThing(String thing,double rate){
 
         if (searchThing(thing))
         {
@@ -13,26 +14,34 @@ public class Cart_System
         else {
             shoppingList.add(thing);
         }
+        shoppingPrice.add(rate);
     }
 
     public void printAllThings()
     {
+        double sum=0;
         System.out.println(">> "+"You have cart "+shoppingList.size()+" items.");
         for (int i=0;i<shoppingList.size();i++)
         {
-            System.out.println("\t"+(i+1)+". " + shoppingList.get(i));
+            System.out.println("\t"+(i+1)+". " + shoppingList.get(i)+"\t Price: "+shoppingPrice.get(i));
+        }
+        for (int j=0;j<shoppingList.size();j++){
+            sum=sum+shoppingPrice.get(j);
+        }
+        if (sum>0){
+            System.out.println("\tTotal price: "+sum);
         }
         System.out.println("__________________________________________");
     }
 
-    public void replaceThings(String currentThing, String newThing)
+    public void replaceThings(String currentThing, String newThing,double rate)
     {
         int position = findThing(currentThing);
         if (searchThing(currentThing))
         {
             if (position>=0 && !searchThing(newThing))
             {
-                replaceThings(position,newThing);
+                replaceThings(position,newThing,rate);
             }
             else
                 {
@@ -46,19 +55,26 @@ public class Cart_System
 
     }
 
-    private void replaceThings(int index, String thing)
+    private void replaceThings(int index, String thing,double newPrice)
     {
         shoppingList.set(index, thing);
+        shoppingPrice.set(index,newPrice);
         System.out.println(">> "+"Your cart item "+(index+1)+" has been replace.");
     }
 
+//    public void testThing(String thing){
+//        int position = findThing(thing);
+//        System.out.println("Test index:  " + position);
+//    }
     public void removeThing(String thing)
     {
         int position= findThing(thing);
+        System.out.println("Index :   "+position);
         if (searchThing(thing)){
             if (position>=0){
                 removeThing(position);
                 System.out.println(">> You remove "+thing+" on your cart.");
+                removePrice(position);
             }
         }
         else
@@ -73,6 +89,10 @@ public class Cart_System
         shoppingList.remove(index);
     }
 
+    private void removePrice(int index){
+        shoppingPrice.remove(index);
+    }
+
     private int findThing(String searchThings)
     {
         return shoppingList.indexOf(searchThings);
@@ -81,14 +101,16 @@ public class Cart_System
     public boolean searchThing(String thing)
     {
         int position= findThing(thing);
-        if (position>=0)
-        {
-            return true;
-        }
-        else
-            {
-            return false;
-        }
+        return position >= 0;
+    }
+    public void priceOfThing(String thing){
+        int position = findThing(thing);
+        System.out.print("Search item: "+ shoppingList.get(position));
+        Double price = shoppingPrice.get(position);
+        System.out.println("\tPrice: "+price);
+
     }
 
 }
+
+// Programming by Ramprasad Mandal.
