@@ -1,3 +1,5 @@
+//This problem's time complexity is: O(n logn)
+
 import javax.sound.midi.Soundbank;
 import java.lang.reflect.Array;
 import java.util.Arrays;
